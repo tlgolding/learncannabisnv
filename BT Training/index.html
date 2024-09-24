@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Budtender Training Home</title>
+	<link rel="stylesheet" href="btStyle.css">
+  <style>
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .popup {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="overlay" id="age-verification">
+    <div class="popup">
+        <h2>Welcome to Learning Cannabis NV!</h2>
+        <p>Please confirm that you are 21 years old or older to proceed:</p>
+        <button class="btn" id="confirm-button">Yes</button>
+        <button class="btn" id="reject-button">No</button>
+    </div>
+</div>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="nvLaws.html">Basics of Nevada Regulation</a></li>
+    <li><a href="methodConsumption.html">Methods of Consumption</a></li>
+    <li><a href="littleHistory.html">A Little History</a></li>
+    <li><a href="cannsAndEndo.html">Cannabinoids and the Endocannabinoid System</a></li>
+    <li><a href="strainLineage.html">Strain Lineage</a></li>
+    <li><a href="terpenes.html">Terpenes</a></li>
+    <li><a href="customerFAQs.html">Common Customer Questions and Concerns</a></li>
+    <li><a href="popularBrands.html">Popular Companies Sold In Nevada</a></li>
+    <li><a href="thcConsumption.html">Calculating THC Consumption</a></li>
+    <li><a href="mySources.html">Sources and Additional Reading</a></li>
+    <li><a href="donate.html">Donate</a></li>
+  </ul>
+</nav>
+
+<script>
+    document.getElementById('confirm-button').addEventListener('click', function() {
+        document.getElementById('age-verification').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+    });
+
+    document.getElementById('reject-button').addEventListener('click', function() {
+        alert("You must be 21 years or older to view this content.");
+        window.location.href = "https://www.google.com"; // Redirect or handle as needed
+    });
+</script>
+
+</head>
+
+
+<h1>Learn About Cannabis</h1>
+<h2>Introduction</h2>
+<p>After 4 years in the legal cannabis industry and a year putting together information, I wanted to share what I have learned in order to increase awareness about the history and finer points of the plant and its use both now and throughout history, as well as share information about terpenes, cannabinoids, strain lineage, and how our bodies react to all these compounds.</p>
+
+<p>Although some of this information is most helpful for Budtenders, greater knowledge will also improve consumers' experiences. It also helps increase awareness about what information concerning cannabis use has been obscured by illegality, stigma, and propaganda against cannabis. There is also some Nevada-specific information, as while it is still federally illegal, all legal states have their own laws.</p>
+
+<p>To find legal dispensaries near you, I generally recommend <a href="https://weedmaps.com/dispensaries/in/united-states/nevada"><strong>Weed Maps</strong></a>, as it lists dispensaries in proximity. It does give a general idea of what the store carries, but not all cannabis dispensaries' inventories are fully synced with this site, as it is third-party. Checking the dispensaries' individual websites usually provides the most up-to-date menu.</p>
+
+<p>I also recommend looking at Reddit's <a href="https://www.reddit.com/r/vegastrees/"><strong>r/vegastrees</strong></a> for specific questions, recommendations, experiences, and advice. A lot of people, many of them local, post on this subreddit, making this a great resource. Of course, this is primarily Vegas, but many of the cultivators available in Vegas are available throuhgout the state.</p>
+
+<p>This site is very simple and done in my free time, so it is not anything fancy. Bear with me as I improve in web development so I can bring more features to it and add more, better information. My intention is to create a set of information that is comprehensive and helpful to consumers with all levels of experience. In the meantime, happy learning!</p>
+
+
+</body>
