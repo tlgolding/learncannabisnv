@@ -1,6 +1,7 @@
 body {
     background-color: #f0fff0; 
     padding-left: 170px; 
+    font-size: .85em;
 }
 
 body, h1, h2, h3, p {
@@ -36,6 +37,9 @@ nav li {
     margin: 5px 0;  
     border: 2px solid #054013; 
     border-radius: 10px;
+    box-shadow: 0 4px 8px #284A1A;
+    font-size: .85em;
+    padding: 5px;
 }
 
 nav a {
